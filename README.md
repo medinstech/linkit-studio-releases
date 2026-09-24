@@ -51,6 +51,7 @@ Teknoloji Anonim Şirketi*; if it shows anything else, do not run the file.
 | `LICENSE.txt` | The licence agreement for that version (also shown by the installer) |
 | `THIRD-PARTY-LICENSES.md` | The open-source components inside the application and their licences |
 | `build-manifest.txt` | The exact library versions that build was made from |
+| `latest.json` | What the application reads to learn that a newer version exists |
 
 ### Licence
 
@@ -118,6 +119,7 @@ imzalıdır. Windows yayıncıyı *Medinstech Mühendislik ve Teknoloji Anonim
 | `LICENSE.txt` | O sürümün lisans sözleşmesi (kurulumda da gösterilir) |
 | `THIRD-PARTY-LICENSES.md` | Uygulamanın içindeki açık kaynak bileşenler ve lisansları |
 | `build-manifest.txt` | O derlemenin yapıldığı kütüphane sürümlerinin tam listesi |
+| `latest.json` | Uygulamanın yeni sürüm olduğunu öğrenmek için okuduğu dosya |
 
 ### Lisans
 
