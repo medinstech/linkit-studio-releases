@@ -29,6 +29,20 @@ Product page: [medinstech.com/linkit](https://www.medinstech.com/linkit/)
 - To remove it, use Windows *Settings → Apps*. Your own parts library, in
   `%LOCALAPPDATA%\Medinstech\LinkitSandbox`, is left in place.
 
+### Updates
+
+A few seconds after it opens, LinKit Studio checks this repository for a newer
+version. If there is one, an **Update** button appears at the top of the window,
+and clicking it downloads the new installer. Nothing is installed without you.
+The check downloads one small file from GitHub and sends nothing about you or
+your projects. It can be turned off in *Settings › Application*.
+
+### Signed by Medinstech
+
+The installer and the application are signed with Medinstech's code-signing
+certificate. Windows shows the publisher as *Medinstech Mühendislik ve
+Teknoloji Anonim Şirketi*; if it shows anything else, do not run the file.
+
 ### What each release contains
 
 | File | What it is |
@@ -81,6 +95,20 @@ Sürümün içinden `LinKit_Studio_Setup_<sürüm>.exe` dosyasını indirip çal
 - Kaldırmak için Windows *Ayarlar → Uygulamalar*'ı kullanın.
   `%LOCALAPPDATA%\Medinstech\LinkitSandbox` altındaki kendi parça
   kütüphaneniz silinmez.
+
+### Güncellemeler
+
+LinKit Studio açıldıktan birkaç saniye sonra bu depoda daha yeni bir sürüm olup
+olmadığına bakar. Varsa pencerenin üstünde bir **Güncelleme** düğmesi çıkar;
+tıklayınca yeni kurulum dosyası iner. Sizden habersiz hiçbir şey kurulmaz.
+Kontrol, GitHub'dan küçük bir dosya indirir; sizin veya projeleriniz hakkında
+hiçbir bilgi göndermez. *Ayarlar › Uygulama*'dan kapatılabilir.
+
+### Medinstech imzalı
+
+Kurulum dosyası ve uygulama, Medinstech'in kod imzalama sertifikasıyla
+imzalıdır. Windows yayıncıyı *Medinstech Mühendislik ve Teknoloji Anonim
+Şirketi* olarak gösterir; başka bir şey gösteriyorsa dosyayı çalıştırmayın.
 
 ### Her sürümde neler var
 
