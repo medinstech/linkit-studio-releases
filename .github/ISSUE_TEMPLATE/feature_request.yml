@@ -1,0 +1,17 @@
+name: Öneri / Suggestion
+description: LinKit Studio için bir fikir önerin / Suggest an idea for LinKit Studio
+title: "[Öneri / Suggestion] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Ne istiyorsunuz? / What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Neden? Neyi kolaylaştırır? / Why? What would it make easier?
+    validations:
+      required: false

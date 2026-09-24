@@ -62,6 +62,14 @@ The application contains third-party components under their own licences —
 among them Qt, via PySide6, under the LGPL v3. `THIRD-PARTY-LICENSES.md`
 explains what that entitles you to and how to obtain those sources.
 
+### Reporting a problem
+
+Use **Report a problem** in the application (on the start page, or in
+*Settings › Application*): it opens a form here with the version and your
+Windows already filled in. You can also
+[open one directly](https://github.com/medinstech/linkit-studio-releases/issues/new/choose).
+Reports need a GitHub account.
+
 ### Safety
 
 LinKit Studio commands physical machinery that can move without warning. You are
@@ -129,6 +137,14 @@ Uygulama kendi lisanslarına tabi üçüncü taraf bileşenler içerir; bunları
 arasında PySide6 üzerinden LGPL v3 lisanslı Qt de var.
 `THIRD-PARTY-LICENSES.md` bunun size hangi hakları verdiğini ve kaynak
 kodlarına nasıl ulaşacağınızı anlatır.
+
+### Hata bildirimi
+
+Uygulamadaki **Hata bildir** düğmesini kullanın (başlangıç sayfasında veya
+*Ayarlar › Uygulama*'da): burada, sürüm ve Windows bilgisi önceden
+doldurulmuş bir form açar. Formu
+[doğrudan da açabilirsiniz](https://github.com/medinstech/linkit-studio-releases/issues/new/choose).
+Bildirim için GitHub hesabı gerekir.
 
 ### Güvenlik
 

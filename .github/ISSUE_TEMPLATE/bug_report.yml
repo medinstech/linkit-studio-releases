@@ -1,0 +1,76 @@
+# The application's "Report a problem" button opens this form with `version`
+# and `system` already filled in, by passing them in the URL. Those two ids are
+# the application's too (software/bug_report.py in the source repository):
+# renaming either here leaves that field empty for every report sent from the app.
+name: Hata bildirimi / Bug report
+description: LinKit Studio'da bir sorun bildirin / Report a problem with LinKit Studio
+title: "[Hata / Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildiriminiz için teşekkürler. Uygulamadaki **Hata bildir** düğmesiyle açtıysanız sürüm ve sistem alanları doludur.
+
+        Thank you for reporting. If you opened this from **Report a problem** in the app, the version and system are already filled in.
+  - type: input
+    id: version
+    attributes:
+      label: Sürüm / Version
+      description: Ayarlar › Uygulama'da yazar / Shown in Settings › Application
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Sistem / System
+      placeholder: "Windows 11 (10.0.26200, AMD64)"
+    validations:
+      required: false
+  - type: dropdown
+    id: hardware
+    attributes:
+      label: Bağlı donanım / Connected hardware
+      options:
+        - Yok / None
+        - LinKit 5-Bar
+        - ZeroB modülleri / ZeroB modules
+        - Diğer / Other
+    validations:
+      required: false
+  - type: textarea
+    id: what
+    attributes:
+      label: Ne oldu? / What happened?
+      description: Gördüğünüz hata mesajı varsa aynen yazın / If there was an error message, copy it exactly
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Nasıl tekrarlanır? / How can we make it happen again?
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ne olmasını bekliyordunuz? / What did you expect?
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Günlük / Log
+      description: Pencerenin altındaki LOG çekmecesinden kopyalayıp yapıştırın / Copy it from the LOG drawer at the bottom of the window
+      render: text
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Ekran görüntüsü eklemek için buraya sürükleyip bırakabilirsiniz. / You can drag screenshots into any box above.
