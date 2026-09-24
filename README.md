@@ -12,7 +12,7 @@ building mechanisms from LinKit modules on a grid baseplate, and the control
 application for the machines you build with it.
 
 This repository hosts the **installers only**. The application is free to
-download and use; its source code is not published.
+download and use.
 
 ### Download
 
@@ -56,8 +56,7 @@ Teknoloji Anonim Şirketi*; if it shows anything else, do not run the file.
 ### Licence
 
 Free to use, including commercially, on any number of your own devices. The
-source code is not published. The full terms are in `LICENSE.txt` in each
-release.
+full terms are in `LICENSE.txt` in each release.
 
 The application contains third-party components under their own licences —
 among them Qt, via PySide6, under the LGPL v3. `THIRD-PARTY-LICENSES.md`
@@ -79,7 +78,7 @@ modülleriyle bir ızgara taban plakası üzerinde mekanizma kurmak için bir
 sandbox ve kurduğunuz makineleri kontrol eden uygulama.
 
 Bu depoda **yalnızca kurulum dosyaları** bulunur. Uygulamayı indirmek ve
-kullanmak ücretsizdir; kaynak kodu yayınlanmamaktadır.
+kullanmak ücretsizdir.
 
 ### İndirme
 
@@ -124,8 +123,7 @@ imzalıdır. Windows yayıncıyı *Medinstech Mühendislik ve Teknoloji Anonim
 ### Lisans
 
 Ticari kullanım dahil, kendi cihazlarınızın tamamında ücretsiz kullanılabilir.
-Kaynak kodu yayınlanmamaktadır. Tam koşullar her sürümdeki `LICENSE.txt`
-dosyasındadır.
+Tam koşullar her sürümdeki `LICENSE.txt` dosyasındadır.
 
 Uygulama kendi lisanslarına tabi üçüncü taraf bileşenler içerir; bunların
 arasında PySide6 üzerinden LGPL v3 lisanslı Qt de var.
