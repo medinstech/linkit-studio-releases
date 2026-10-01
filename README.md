@@ -15,12 +15,13 @@
 <p align="center">
   <a href="https://github.com/medinstech/linkit-studio-releases/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/medinstech/linkit-studio-releases?label=latest&color=ff7f00"></a>
   <img alt="Windows 10 / 11, 64-bit" src="https://img.shields.io/badge/Windows-10%20%7C%2011%20%C2%B7%2064--bit-0078D6">
+  <img alt="macOS 13 or later, Apple Silicon" src="https://img.shields.io/badge/macOS-13%2B%20%C2%B7%20Apple%20Silicon-333333">
   <img alt="Free" src="https://img.shields.io/badge/price-free-2ea44f">
   <img alt="English and Turkish" src="https://img.shields.io/badge/language-EN%20%7C%20TR-555">
 </p>
 
 <p align="center">
-  <a href="https://github.com/medinstech/linkit-studio-releases/releases/latest"><b>⬇&nbsp;&nbsp;Download for Windows</b></a>
+  <a href="https://github.com/medinstech/linkit-studio-releases/releases/latest"><b>⬇&nbsp;&nbsp;Download for Windows and macOS</b></a>
   &nbsp;·&nbsp; <a href="#english">English</a>
   &nbsp;·&nbsp; <a href="#türkçe">Türkçe</a>
   &nbsp;·&nbsp; <a href="https://www.medinstech.com/linkit/">medinstech.com/linkit</a>
@@ -48,7 +49,8 @@
 <a id="english"></a>
 ## 🌎 English
 
-**LinKit Studio** is a free Windows application from Medinstech: a sandbox for
+**LinKit Studio** is a free application from Medinstech, for Windows and
+macOS: a sandbox for
 building mechanisms from LinKit modules on a grid baseplate, and the control
 application for the machines you build with it.
 
@@ -60,8 +62,8 @@ application for the machines you build with it.
 - **Start from a set.** Open the LinKit 5-Bar Set in one click, or an example,
   and change it from there.
 - **Drive it.** A slider for each motor, an X/Y target, and the area the
-  mechanism can reach. On a five-bar: freehand sketching, a picture turned
-  into a toolpath, G-code, and pick & place.
+  mechanism can reach. On a five-bar: freehand sketching, G-code, and pick &
+  place.
 - **Read every part.** Its size, the range of its joint, and every face
   another part can connect to.
 - **In English or Turkish,** one click apart.
@@ -71,24 +73,39 @@ machine needs one connected over USB or Wi-Fi.
 
 ### Download and install
 
+**Windows**
+
 1. Open the **[latest version](https://github.com/medinstech/linkit-studio-releases/releases/latest)**
    and download `LinKit_Studio_Setup_<version>.exe`.
 2. Run it, and choose English or Turkish. It installs for your user account
    only, so it needs no administrator rights.
 3. If Windows SmartScreen stops it, see [Signed by Medinstech](#signed-by-medinstech).
 
-**Requirements:** Windows 10 or 11, 64-bit; about 650 MB of disk space; a
-graphics driver with OpenGL 3.2 or later, which any recent computer has.
+**macOS**
+
+1. Open the **[latest version](https://github.com/medinstech/linkit-studio-releases/releases/latest)**
+   and download `LinKit_Studio_<version>.dmg`.
+2. Open it, and drag **LinKit Studio** onto **Applications**.
+3. Open LinKit Studio from Applications. The first time, macOS asks whether to
+   open an application downloaded from the internet: choose *Open*.
+
+**Requirements:** Windows 10 or 11, 64-bit, with about 650 MB of disk space
+and a graphics driver with OpenGL 3.2 or later, which any recent computer has.
+Or a Mac with Apple Silicon (M1 or later) and macOS 13 or later, with about
+900 MB of disk space; Intel Macs are not supported.
 
 It installs to `%LOCALAPPDATA%\Programs\Medinstech\LinKit Studio`. To remove
 it, use Windows *Settings → Apps*. Your own parts library, in
-`%LOCALAPPDATA%\Medinstech\LinkitSandbox`, is left in place.
+`%LOCALAPPDATA%\Medinstech\LinkitSandbox`, is left in place. On a Mac it is
+`/Applications/LinKit Studio.app`, removed by moving it to the Bin; your parts
+library, in `~/Library/Application Support/Medinstech/LinkitSandbox`, stays.
 
 ### Updates
 
 A few seconds after it opens, LinKit Studio checks this repository for a newer
 version. If there is one, it tells you once, and an **Update** button stays at
-the top of the window; either downloads the new installer. Nothing is installed
+the top of the window; either downloads the new installer (on a Mac, the new
+disk image). Nothing is installed
 without you. The check downloads one small file from GitHub and sends nothing
 about you or your projects. It can be turned off in *Settings › Application*.
 
@@ -98,6 +115,11 @@ The installer and the application are signed with Medinstech's code-signing
 certificate. Windows shows the publisher as *Medinstech Mühendislik ve
 Teknoloji Anonim Şirketi*; if it shows anything else, do not run the file.
 
+On a Mac, the application is signed with Medinstech's Developer ID and
+notarized by Apple: macOS asks only whether to open an application from the
+internet. If it says the application is damaged or cannot be checked for
+malicious software, do not open it.
+
 A new release can still meet a Windows SmartScreen warning until enough people
 have run it. Choose *More info*, check that the publisher is the one above, and
 then *Run anyway*.
@@ -106,7 +128,8 @@ then *Run anyway*.
 
 | File | What it is |
 |---|---|
-| `LinKit_Studio_Setup_<version>.exe` | The installer |
+| `LinKit_Studio_Setup_<version>.exe` | The installer, for Windows |
+| `LinKit_Studio_<version>.dmg` | The disk image, for macOS (from 2.2.0) |
 | `LICENSE.txt`, `LICENSE.tr.txt` | The licence agreement for that version, in English and Turkish (the installer shows it in the language you choose) |
 | `THIRD-PARTY-LICENSES.md` | The open-source components inside the application, and what their licences entitle you to |
 | `THIRD-PARTY-NOTICES.txt` | The full licence text of every open-source component inside the application |
@@ -117,7 +140,7 @@ then *Run anyway*.
 
 Use **Report a problem** in the application (on the start page, or in
 *Settings › Application*): it opens a form here with the version and your
-Windows already filled in. You can also
+system already filled in. You can also
 [open one directly](https://github.com/medinstech/linkit-studio-releases/issues/new/choose).
 Reports need a GitHub account.
 
@@ -142,7 +165,8 @@ as a safety measure.
 <a id="türkçe"></a>
 ## 🇹🇷 Türkçe
 
-**LinKit Studio**, Medinstech'in ücretsiz Windows uygulamasıdır: LinKit
+**LinKit Studio**, Medinstech'in Windows ve macOS için ücretsiz uygulamasıdır:
+LinKit
 modülleriyle bir ızgara taban plakası üzerinde mekanizma kurmak için bir
 sandbox ve kurduğunuz makineleri kontrol eden uygulama.
 
@@ -154,8 +178,7 @@ sandbox ve kurduğunuz makineleri kontrol eden uygulama.
 - **Bir setten başlayın.** LinKit 5-Bar Seti'ni ya da bir örneği tek tıkla
   açın, oradan değiştirin.
 - **Sürün.** Her motor için bir kaydırıcı, bir X/Y hedefi ve mekanizmanın
-  erişebildiği alan. 5-Bar'da serbest çizim, görselden takım yolu, G-code ve
-  al-bırak.
+  erişebildiği alan. 5-Bar'da serbest çizim, G-code ve al-bırak.
 - **Her parçayı inceleyin.** Ölçüleri, ekleminin aralığı ve başka bir parçanın
   bağlanabileceği her yüzü.
 - **Türkçe ya da İngilizce,** aralarında tek tık.
@@ -165,6 +188,8 @@ sürmek için USB ya da Wi-Fi ile bağlı bir makine gerekir.
 
 ### İndirme ve kurulum
 
+**Windows**
+
 1. **[En son sürümü](https://github.com/medinstech/linkit-studio-releases/releases/latest)**
    açın ve `LinKit_Studio_Setup_<sürüm>.exe` dosyasını indirin.
 2. Çalıştırın, Türkçe ya da İngilizce'yi seçin. Yalnızca sizin kullanıcı
@@ -172,20 +197,34 @@ sürmek için USB ya da Wi-Fi ile bağlı bir makine gerekir.
 3. Windows SmartScreen durdurursa [Medinstech imzalı](#medinstech-imzalı)
    bölümüne bakın.
 
-**Gereksinimler:** Windows 10 ya da 11, 64-bit; yaklaşık 650 MB disk alanı;
+**macOS**
+
+1. **[En son sürümü](https://github.com/medinstech/linkit-studio-releases/releases/latest)**
+   açın ve `LinKit_Studio_<sürüm>.dmg` dosyasını indirin.
+2. Açın ve **LinKit Studio**'yu **Applications** (Uygulamalar) klasörüne
+   sürükleyin.
+3. LinKit Studio'yu Uygulamalar'dan açın. İlk açılışta macOS, internetten
+   indirilmiş bir uygulamayı açmak isteyip istemediğinizi sorar: *Aç*'ı seçin.
+
+**Gereksinimler:** Windows 10 ya da 11, 64-bit; yaklaşık 650 MB disk alanı ve
 OpenGL 3.2 veya üstünü destekleyen bir ekran kartı sürücüsü (yeni her
-bilgisayarda vardır).
+bilgisayarda vardır). Ya da Apple Silicon işlemcili (M1 ve sonrası), macOS 13
+veya üstü bir Mac ve yaklaşık 900 MB disk alanı; Intel işlemcili Mac'ler
+desteklenmez.
 
 Kurulum yeri: `%LOCALAPPDATA%\Programs\Medinstech\LinKit Studio`. Kaldırmak için
 Windows *Ayarlar → Uygulamalar*'ı kullanın.
 `%LOCALAPPDATA%\Medinstech\LinkitSandbox` altındaki kendi parça kütüphaneniz
-silinmez.
+silinmez. Mac'te kurulum yeri `/Applications/LinKit Studio.app`; kaldırmak için
+Çöp Sepeti'ne taşıyın. `~/Library/Application Support/Medinstech/LinkitSandbox`
+altındaki parça kütüphaneniz silinmez.
 
 ### Güncellemeler
 
 LinKit Studio açıldıktan birkaç saniye sonra bu depoda daha yeni bir sürüm olup
 olmadığına bakar. Varsa bunu bir kez haber verir ve pencerenin üstünde bir
-**Güncelleme** düğmesi kalır; ikisi de yeni kurulum dosyasını indirir. Sizden
+**Güncelleme** düğmesi kalır; ikisi de yeni kurulum dosyasını (Mac'te yeni
+disk görüntüsünü) indirir. Sizden
 habersiz hiçbir şey kurulmaz. Kontrol, GitHub'dan küçük bir dosya indirir;
 sizin veya projeleriniz hakkında hiçbir bilgi göndermez. *Ayarlar › Uygulama*'dan
 kapatılabilir.
@@ -196,6 +235,11 @@ Kurulum dosyası ve uygulama, Medinstech'in kod imzalama sertifikasıyla
 imzalıdır. Windows yayıncıyı *Medinstech Mühendislik ve Teknoloji Anonim
 Şirketi* olarak gösterir; başka bir şey gösteriyorsa dosyayı çalıştırmayın.
 
+Mac'te uygulama Medinstech'in Developer ID'siyle imzalı ve Apple tarafından
+onaylıdır (notarize): macOS yalnızca internetten indirilmiş bir uygulamayı
+açmak isteyip istemediğinizi sorar. Uygulamanın hasarlı olduğunu ya da kötü
+amaçlı yazılım denetiminin yapılamadığını söylerse açmayın.
+
 Yeni bir sürüm, yeterince kişi çalıştırana kadar yine de Windows SmartScreen
 uyarısıyla karşılaşabilir. *Ek bilgi*'yi seçin, yayıncının yukarıdaki olduğunu
 kontrol edin, sonra *Yine de çalıştır*'a basın.
@@ -204,7 +248,8 @@ kontrol edin, sonra *Yine de çalıştır*'a basın.
 
 | Dosya | Ne olduğu |
 |---|---|
-| `LinKit_Studio_Setup_<sürüm>.exe` | Kurulum dosyası |
+| `LinKit_Studio_Setup_<sürüm>.exe` | Kurulum dosyası, Windows için |
+| `LinKit_Studio_<sürüm>.dmg` | Disk görüntüsü, macOS için (2.2.0'dan itibaren) |
 | `LICENSE.txt`, `LICENSE.tr.txt` | O sürümün lisans sözleşmesi, İngilizce ve Türkçe (kurulum seçtiğiniz dildekini gösterir) |
 | `THIRD-PARTY-LICENSES.md` | Uygulamanın içindeki açık kaynak bileşenler ve lisanslarının size tanıdığı haklar |
 | `THIRD-PARTY-NOTICES.txt` | Uygulamanın içindeki her açık kaynak bileşenin tam lisans metni |
@@ -214,7 +259,7 @@ kontrol edin, sonra *Yine de çalıştır*'a basın.
 ### Hata bildirimi
 
 Uygulamadaki **Hata bildir** düğmesini kullanın (başlangıç sayfasında veya
-*Ayarlar › Uygulama*'da): burada, sürüm ve Windows bilgisi önceden
+*Ayarlar › Uygulama*'da): burada, sürüm ve sistem bilgisi önceden
 doldurulmuş bir form açar. Formu
 [doğrudan da açabilirsiniz](https://github.com/medinstech/linkit-studio-releases/issues/new/choose).
 Bildirim için GitHub hesabı gerekir.
